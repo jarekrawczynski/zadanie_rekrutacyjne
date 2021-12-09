@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag jkraw/nginx-zadanie:$(date +%s)
      
     - name: Docker Push
-      run: docker push docker.io//${{secrets.DOCKER_USER}}/nginx:latest
+      run: docker push docker.io/${{secrets.DOCKER_USER}}/nginx:latest
